@@ -1,0 +1,361 @@
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif; 
+}
+
+body {
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.5) ,rgba(255, 255, 255) 3px, transparent 5px) no-repeat;
+    background-size: 0 100%;
+}
+
+a:hover {
+    transition: 0.3s;
+    background-size: 100% 100%;
+}
+
+.link {
+    color: #D26438;
+    text-decoration: none;
+    background: linear-gradient(to top, rgba(255, 255, 255, 1) ,rgba(255, 255, 255) 3px, transparent 2px) no-repeat;
+    background-size: 0 100%;
+}
+
+.link:hover {
+    color: #00acfc;
+}
+
+/* NAVBAR */ 
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to bottom right,#1a1a1a,  #3b1d1d);
+    border-bottom: 2px solid #D26438;
+}
+
+.left{
+    display: flex;
+    align-self: center;
+    margin-left: 10px;
+}
+
+.color-theme {
+    margin-left: 10px;
+    align-self: center;
+}
+
+.change-color {
+    background-color: #D26438;
+    border-style: none;
+    border-radius: 10px;
+}
+
+.change-color:hover {
+    transition: .3s;
+    box-shadow: 0 0 10px 4px #00acfc;
+}
+
+i {
+    color: #ffffff;
+    font-size: 30px;
+    align-self: center;
+    margin: 20px;
+}
+
+.right{
+    display: flex;
+    justify-content: center;
+}
+
+input[type="search"].recherche{
+    height: 30px;
+    width: 400px;
+    padding: 16px;
+    outline: none;
+    font-size: 15px;
+    font-weight: bold;  
+    align-self: center;
+    border-style: none;
+    border-radius: 4px;    
+} 
+
+input[type="search"].recherche:focus{
+    background-color: #1a1a1a;
+    border: 1px solid #D26438;
+    color: #ffffff;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.navbar ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 30px;  
+}
+
+.navbar ul li a{
+    color: #D26438;
+    padding: 13px;
+    text-transform: uppercase;
+    border-style: solid;
+    border-color: #D26438;
+}
+
+.navbar ul li a:hover{
+    color: #ffffff;
+    background-color: #D26438;
+    transition: 0.4s;
+    border-style: solid;
+}
+
+/* END NAVBAR */
+
+/* BODY-CONTENT */
+
+#container {
+    margin-top: 100px;
+}
+
+.body-content {
+    height: 1000px;
+    width: 94%;
+    margin: auto;
+}
+
+.columns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.firstColumn, .secondColumn, .thirdColumn, .fourthColumn {
+    color: #ffffff;
+    margin: 50px auto;
+    border: 2px solid #f05d3e;
+    border-radius: 20px;
+    box-shadow: 1px;
+    background-image: url(../images/forest.jpg);
+    background-size: cover;
+} 
+
+.firstColumn:hover, .secondColumn:hover {
+    transform: translateY(-10px);
+    transition: .3s;
+    background: url(../images/first.jpg);
+    background-size: cover;
+    border: 2px solid #00acfc;
+    box-shadow: 0 0 10px 4px #00acfc;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+.firstColumn, .secondColumn {
+    font-size: 1em;
+    width: 46%;
+    height: 400px;
+    line-height: 40px;
+}
+
+@media screen and (max-width: 1367px) {
+    .firstColumn, .secondColumn {
+        font-size: 1em;
+        width: 46%;
+        height: 400px;
+        line-height: 36px;
+    }
+}
+
+.thirdColumn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 96%;
+    height: 400px;    
+}
+
+.thirdColumn:hover {
+    transform: translateY(-10px);
+    transition: 0.5s;
+    background-image: url(../images/bike.jpg), url(../images/code.jpg), url(../images/run.jpg), url(../images/basket.jpg), url(../images/bad.jpg);
+    background-position: 0%, 35%, 60%, 80%, 100%;
+    background-size: 35% 100%, 25% 100%, 20% 100%, 16% 100%, 18% 100%;
+    background-repeat: no-repeat;
+    color: transparent;
+    border: 2px solid #00acfc;
+    box-shadow: 0 0 10px 4px #00acfc;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1367px) {
+    .thirdColumn:hover {
+        transform: translateY(-10px);
+        transition: 0.5s;
+        background-image: url(../images/bike.jpg), url(../images/code.jpg), url(../images/run.jpg);
+        background-position: 0%, 55%, 100%;
+        background-size: 45% 100%, 35% 100%, 30% 100%;
+        background-repeat: no-repeat;
+        color: transparent;
+        border: 2px solid #00acfc;
+        box-shadow: 0 0 10px 4px #00acfc;
+        cursor: pointer;
+    }
+}
+
+.thirdColumn:hover .fa-star {
+    display: none;
+}
+
+.fourthColumn {
+    width: 96%;
+    height: 400px;
+    display: flex;
+    cursor: pointer;
+}
+
+.fourthColumn:hover {
+    transform: translateY(-10px);
+    transition: 0.5s;
+    border: 2px solid #00acfc;
+    box-shadow: 0 0 10px 4px #00acfc;
+}
+
+.movie {
+    width: 100%;
+    border-radius: 20px;
+    margin: 0.5em;
+}
+
+@media screen and (max-width: 1367px) {
+    .movie {
+        width: 50%;
+        border-radius: 20px;
+        margin: 0.5em;
+    }
+}
+
+.film {
+    color: #3ae1ff;
+    font-style: italic;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.link-film {
+    color: #ffffff;
+    text-decoration: none;
+    background: linear-gradient(to top, rgba(255, 255, 255, 1) ,rgba(255, 255, 255) 3px, transparent 2px) no-repeat;
+    background-size: 0 100%;
+}
+
+.link-film:hover {
+    color: #00acfc;
+}
+
+.fourthColumnContent {
+    line-height: 2em;
+    color: #D26438;
+    margin: 2em;
+    text-align: justify;
+}
+
+.trailer {
+    margin-top: 2em;
+}
+
+@media screen and (max-width: 1367px) {
+    .trailer {
+        margin-top: 0em;
+    }
+}
+
+.presentation-title {
+    font-weight: bold;
+    margin: 20px 0 20px 0;
+    color: #3ae1ff;
+}
+
+.presentation {
+    padding: 20px;
+    font-weight: 100;
+    font-size: 1em;
+    align-self: center;
+}
+
+.thirdColumnHelp {
+    margin-left: 10px;
+}
+
+/* TABLEAU */
+
+.moyennes {
+    font-weight: 500;
+    font-size: 1em;
+    text-align: center;
+    margin: 3em;
+}
+
+@media screen and (max-width: 1367px) {
+    .moyennes {
+        font-size: 0.7em;
+        margin: 3em;
+    }
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th {
+    color: #D26438;
+    padding: 10px;
+}
+
+th:hover {
+    transition: .5s;
+    color:#3ae1ff;
+    cursor: pointer;
+}
+
+tr {
+    border: 1px solid;
+}
+
+td, th {
+    border: 1px solid #ffffff;
+}
+
+/* FIN TABLEAU */
+
+/* END-CONTENT */
+
+/* FOOTER */
+
+.footer{
+    margin-top: 510px;
+    color: white;
+    text-align: center;
+    background-color: #1a1a1a;
+    padding: 20px;
+    font-size: 14px;
+}
+
+/* END FOOTER */
+

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="with-device_width, initial=scale=1.0"/>
+        <title>Eberhardt Valentin</title>
+        <link href="images/icon.jpg" rel="shortcut icon">
+        <link rel="stylesheet" type="text/css" href="css/contact.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/cb5781e2cc.js" crossorigin="anonymous"></script>
+        <script src="js/change-color.js"></script>
+        <script src="js/unvailable-message.js"></script>  
+    </head>
+    <body>
+        <header>
+            <div class="navbar">
+                <div class="left">                    
+                    <div class="color-theme">
+                        <button class = "change-color" onclick="changeColor()"><i class="fa fa-adjust" aria-hidden="true"></i></button>
+                    </div>
+                </div>
+
+                <div class="right">
+                    <input type="search" class="recherche" onchange="notAvailable()" placeholder="Recherche ...">
+                    <nav>
+                        <ul>
+                            <li><a href="accueil.html">Accueil</a></li>
+                            <li><a href="informations.html">informations</a></li>
+                            <li><a href="contact.html">Contact</a></li>                            
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <div class="contact-section">
+            <h1 class="title-form">Me contacter</h1>             
+            <div class="border"></div>
+    
+            <form method="POST" class="contact-form">
+                <input type="text" class="contact-form-text" placeholder="Votre nom ..." required>
+                <input type="text" class="contact-form-text" placeholder="Votre prénom ..." required>
+                <input type="email" class="contact-form-text" placeholder="Votre email ..." required>
+                <textarea name="validatdescriptionion" class="contact-form-textarea" placeholder="Votre message ..." required></textarea>
+                <input type="submit" onclick="notAvailable()" class="contact-form-btn" value="Envoyer">
+                <input type="reset" class="contact-form-btn" value="Annuler tout">
+            </form>
+            
+        </div>
+
+        <div class="infos">    
+            <p class="adress">30, rue de Verdun, Metz 57000</p>
+            <hr class="end-line">
+            <p class="telephoneNumber">+33 (0)3 87 66 48 22</p>
+        </div>
+        
+        <div class="footer">
+            <p>Copyright &copy; Valentin Eberhardt - Tous droits réservés - Le fond de cette page est libre de droit et provient de <a href="https://unsplash.com/t/wallpapers" target="_blank" class="link"><em><strong>Unsplash</strong></em></a></p>
+        </div>  
+    </body>
+</html>
+
+
+
+

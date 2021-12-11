@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang = "fr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width-device-width, initial=scale=1.0">
+        <title>Eberhardt Valentin</title>
+        <link rel="stylesheet" type="text/css" href="css/infos.css">
+        
+        <!-- import de la police d'écriture -->
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link href="images/icon.jpg" rel="shortcut icon">
+        <script src="https://kit.fontawesome.com/cb5781e2cc.js" crossorigin="anonymous"></script>
+        <script src="js/change-color.js"></script>
+        <script src="js/unvailable-message.js"></script>        
+    </head>
+
+    <body>
+        <header>
+            <div class="navbar">
+                <div class="left">                    
+                    <div class="color-theme">
+                        <button class = "change-color"  onclick="changeColor()"><i class="fa fa-adjust" aria-hidden="true"></i></button>
+                    </div>
+                </div>
+                
+                <div class="right">
+                    <input type="search" class="recherche" onchange="notAvailable()" placeholder="Recherche ...">
+                    <nav>
+                        <ul>
+                            <li><a href="accueil.html">Accueil</a></li>
+                            <li><a href="informations.html">informations</a></li>
+                            <li><a href="contact.html">Contact</a></li>                            
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+            <div id="container">
+                <div class="body-content">
+                    <div class="columns">
+                        <div class="firstColumn">
+                            <i class="far fa-address-card icone1"></i>
+                            <h1 class="presentation-title">Qui suis-je ?</h1>
+                            <p class="presentation">Bonjour, je m'appelle Valentin Eberhardt, je suis actuellement en P4 au <a href="https://www.lycee-louis-vincent.fr/" class="link">Lycée Louis Vincent</a>. Passionné par l'Informatique, j'ai commencé à apprendre les languages HTML et CSS dès la seconde, mais aussi le Python. Mon objectif, intégrer une école d'ingénieur informatique ou une prépa MPII après le bac !</p>        
+                        </div>
+        
+                        <div class="secondColumn">
+                            <i class="fas fa-code" aria-hidden="true"></i>
+                            <h1 class="presentation-title">Moyennes des trois spécialités</h1>
+                                <table class="moyennes">
+                                    <tr>
+                                        <th>Trimestre</th>
+                                        <th>Mathématiques</th>
+                                        <th>Numérique et Sciences Informatique</th>
+                                        <th>Physique Chimie</th>
+                                    </tr>
+            
+                                    <tr>
+                                        <td>Premier</td>
+                                        <td>15</td>
+                                        <td>16.08</td>
+                                        <td>17.80</td>
+                                    </tr>
+            
+                                    <tr>
+                                        <td>Second</td>
+                                        <td>18</td>
+                                        <td>18.67</td>
+                                        <td>18.10</td>
+                                    </tr>          
+                                </table>                            
+                        </div>
+        
+                        <div class="thirdColumn">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+        
+                            <h1 class="presentation_title">Mes Loisirs préférés</h1>
+                            <p class="thirdColumnHelp"><br/><em>- survoler la case -</em></p>                            
+                        </div>
+        
+                        <div class="fourthColumn">
+                            <img src="images/movie.jpg" alt="film_1917" class="movie">
+                            
+                            <div class="fourthColumnContent">
+                                <h1 class="film">1917</h1>
+                                <p>Il s'agit d'un film d'origine britannique qui met en scène deux jeunes soldats qui ont reçu une mission de la part de leur commandant : ils doivent délivrer un message à des camarades, situés alors à quelques kilomètres de leurs campement, afin d'annuler un assaut. Cette histoire émouvante rend hommage aux soldats morts lors de la Première Guerre Mondiale, elle met en lumière les relations humaines dans des moments tragiques d'autre part.</p>
+                                <p class="trailer"><a href="https://www.youtube.com/watch?v=0YwR8n9tqXM" class="link-film">Cliquez ici</a> pour visionner la bande-annonce</p>
+                            </div>
+                        </div>        
+                    </div>
+            </div>
+        </div>
+    
+        <div class="footer">     
+            <p class="copyright">Copyright &copy; Valentin Eberhardt - Tous droits réservés - Le fond de cette page est libre de droit et provient de <a href="https://unsplash.com/t/wallpapers" target="_blank" class="link"><em><strong>Unsplash</strong></em></a>. Les autres photos sont interdites à la réutilisation</p>
+        </div>        
+    </body>     
+</html>
